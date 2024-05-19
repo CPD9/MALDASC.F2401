@@ -3,6 +3,9 @@ Contributors: Peter, CJ, Omar, Raph
 
 Welcome to our project on Cervical Spine Fracture Detection, inspired by the RSNA 2022 Cervical Spine Fracture Detection competition 1st place subbmision on Kaggle. This project aims to leverage advanced machine learning models to accurately detect cervical spine fractures from CT scans.
 
+![Unknown-14](https://github.com/CPD9/MALDASC.F2401/assets/66946145/1d5780a9-075e-40ba-81ee-08ba93ef0d99)
+
+
 ## Project Goals
 
 - **Objective:** Develop and validate models to identify fractures in CT scans of the cervical spine.
