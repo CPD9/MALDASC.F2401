@@ -1,7 +1,7 @@
 # Cervical Spine Fracture Detection Project
-Conttributors: Peter, CJ, Omar, Raph
+Contributors: Peter, CJ, Omar, Raph
 
-Welcome to our project on Cervical Spine Fracture Detection, inspired by the RSNA 2022 Cervical Spine Fracture Detection competition on Kaggle. This project aims to leverage advanced machine learning models to accurately detect cervical spine fractures from CT scans.
+Welcome to our project on Cervical Spine Fracture Detection, inspired by the RSNA 2022 Cervical Spine Fracture Detection competition 1st place subbmision on Kaggle. This project aims to leverage advanced machine learning models to accurately detect cervical spine fractures from CT scans.
 
 ## Project Goals
 
@@ -17,7 +17,22 @@ The data for this project includes CT scans of the cervical spine. These scans a
 
 1. **Data Preprocessing:** Standardize and preprocess the CT scan images for input into the machine learning models.
 2. **Model Training:** Train various convolutional neural networks (CNNs) and other deep learning architectures to detect fractures.
-3. **Model Evaluation:** Evaluate the models using metrics such as accuracy, precision, recall, and F1-score.
+3. **Model Evaluation:** Evaluate the models using metrics such as accuracy and Intersection Over Unioun.
+
+   ## Models Used
+
+### MaNet
+MaNet (Multiscale Attention Network) is a model designed to capture features at multiple scales using attention mechanisms. It enhances feature representation by focusing on relevant parts of the image, making it particularly useful for detecting subtle fractures in CT scans.
+
+### ResNet
+ResNet (Residual Network) is known for its deep architecture, which uses skip connections to prevent the vanishing gradient problem. This allows the network to be very deep (e.g., ResNet-50, ResNet-101) and effectively learn complex features from the images.
+
+### VGG
+VGG (Visual Geometry Group) networks are deep CNNs characterized by their simplicity and use of small (3x3) convolutional filters. VGG models, like VGG-16 and VGG-19, have been successful in various image recognition tasks and are used here to detect spinal fractures.
+
+### YOLO (You Only Look Once)
+Our new approach integrates YOLO, a state-of-the-art object detection model known for its speed and accuracy. YOLO divides the image into a grid and predicts bounding boxes and probabilities for each grid cell. This approach is particularly effective for real-time detection of fractures in CT scans.
+
 
 ## Challenges
 
