@@ -1,0 +1,73 @@
+weights: yolov5s.pt
+cfg: ''
+data: my_data.yaml
+hyp:
+  anchor_t: 4.0
+  anchors: 0
+  box: 0.1
+  cls: 1.0
+  cls_pw: 0.5
+  degrees: 30.0
+  fl_gamma: 0.0
+  fliplr: 0.5
+  flipud: 0.2
+  hsv_h: 0
+  hsv_s: 0
+  hsv_v: 0
+  iou_t: 0.2
+  lr0: 0.01
+  lrf: 0.032
+  mixup: 0.0
+  momentum: 0.937
+  mosaic: 0.8
+  obj: 2.0
+  obj_pw: 0.5
+  perspective: 0.0
+  scale: 0.3
+  shear: 0.0
+  translate: 0.2
+  warmup_bias_lr: 0.1
+  warmup_epochs: 3.0
+  warmup_momentum: 0.8
+  weight_decay: 0.0005
+  copy_paste: 0.0
+epochs: 80
+batch_size: 32
+imgsz: 512
+rect: false
+resume: false
+nosave: false
+noval: false
+noautoanchor: false
+noplots: false
+evolve: null
+evolve_population: yolov5/data/hyps
+resume_evolve: null
+bucket: ''
+cache: null
+image_weights: false
+device: ''
+multi_scale: false
+single_cls: false
+optimizer: SGD
+sync_bn: false
+workers: 8
+project: yolov5/runs/train
+name: exp
+exist_ok: false
+quad: false
+cos_lr: false
+label_smoothing: 0.0
+patience: 100
+freeze:
+- 0
+save_period: -1
+seed: 0
+local_rank: -1
+entity: null
+upload_dataset: false
+bbox_interval: -1
+artifact_alias: latest
+ndjson_console: false
+ndjson_file: false
+save_dir: yolov5/runs/train/exp6
